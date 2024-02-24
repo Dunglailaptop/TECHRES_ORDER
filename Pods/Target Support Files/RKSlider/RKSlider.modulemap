@@ -1,0 +1,6 @@
+framework module RKSlider {
+  umbrella header "RKSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingPrinterTableViewCell" rowHeight="59" id="KGk-i7-Jjw" customClass="SettingPrinterTableViewCell" customModule="TECHRES_ORDER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDd-vR-y5d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fd7-gA-e6Q">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=""/>
+                                <connections>
+                                    <action selector="actionToUpdatePrinter:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ctI-vo-ofx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Thu ngân " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oot-36-aRG">
+                                <rect key="frame" x="8" y="8" width="75" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="172.16.10.123:9000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krK-Q8-J9z">
+                                <rect key="frame" x="8" y="37" width="125" height="17"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-setting" translatesAutoresizingMaskIntoConstraints="NO" id="IVe-iX-SJQ">
+                                <rect key="frame" x="292" y="19.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="lvi-Gu-vt2"/>
+                                    <constraint firstAttribute="width" constant="20" id="qqp-mI-A2p"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Fd7-gA-e6Q" firstAttribute="leading" secondItem="eDd-vR-y5d" secondAttribute="leading" id="1Nn-57-NxN"/>
+                            <constraint firstItem="Fd7-gA-e6Q" firstAttribute="top" secondItem="eDd-vR-y5d" secondAttribute="top" id="4TB-2P-8Aa"/>
+                            <constraint firstItem="Oot-36-aRG" firstAttribute="top" secondItem="eDd-vR-y5d" secondAttribute="top" constant="8" id="55l-KL-7Yu"/>
+                            <constraint firstAttribute="bottom" secondItem="krK-Q8-J9z" secondAttribute="bottom" constant="5" id="Gcp-0g-vSp"/>
+                            <constraint firstItem="IVe-iX-SJQ" firstAttribute="centerY" secondItem="eDd-vR-y5d" secondAttribute="centerY" id="MTm-Qw-2d5"/>
+                            <constraint firstItem="Oot-36-aRG" firstAttribute="leading" secondItem="eDd-vR-y5d" secondAttribute="leading" constant="8" id="S9W-ep-LxK"/>
+                            <constraint firstItem="krK-Q8-J9z" firstAttribute="top" secondItem="Oot-36-aRG" secondAttribute="bottom" constant="5" id="YPE-cn-x7d"/>
+                            <constraint firstAttribute="trailing" secondItem="Fd7-gA-e6Q" secondAttribute="trailing" id="hpl-qj-eEh"/>
+                            <constraint firstAttribute="trailing" secondItem="IVe-iX-SJQ" secondAttribute="trailing" constant="8" id="lZ5-TY-Uyn"/>
+                            <constraint firstItem="krK-Q8-J9z" firstAttribute="leading" secondItem="Oot-36-aRG" secondAttribute="leading" id="vC3-mX-aqP"/>
+                            <constraint firstAttribute="bottom" secondItem="Fd7-gA-e6Q" secondAttribute="bottom" id="yTz-99-sTw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eDd-vR-y5d" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QNg-tU-qoF"/>
+                    <constraint firstAttribute="bottom" secondItem="eDd-vR-y5d" secondAttribute="bottom" id="Xyu-3n-PhD"/>
+                    <constraint firstAttribute="trailing" secondItem="eDd-vR-y5d" secondAttribute="trailing" id="r1U-Bq-bcl"/>
+                    <constraint firstItem="eDd-vR-y5d" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wE8-5w-HMH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSetting" destination="Fd7-gA-e6Q" id="9pI-fq-jT2"/>
+                <outlet property="lbl_printer_ip_address" destination="krK-Q8-J9z" id="tEV-NK-Wb3"/>
+                <outlet property="lbl_printer_name" destination="Oot-36-aRG" id="vlP-5e-FEX"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="78.683035714285708"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-setting" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

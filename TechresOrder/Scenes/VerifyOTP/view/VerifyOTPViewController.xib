@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifyOTPViewController" customModule="TECHRES_ORDER" customModuleProvider="target">
+            <connections>
+                <outlet property="lbl_wait_time_otp" destination="uEv-BN-OsV" id="BQ2-Hb-uFr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view_otp" destination="Fbg-A8-0xf" id="IFe-wb-nOJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tech-logo_cl_#1" translatesAutoresizingMaskIntoConstraints="NO" id="JNj-Ie-QK6">
+                    <rect key="frame" x="96" y="123" width="222" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="222" id="0hf-ce-fxA"/>
+                        <constraint firstAttribute="height" constant="50" id="6Xe-ml-7gc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nhập mã OTP của bạn" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLY-TL-3pI">
+                    <rect key="frame" x="16" y="203" width="382" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="had-Aw-rmZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfY-4e-Niy">
+                    <rect key="frame" x="16" y="301" width="382" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="Zx7-j7-Mam"/>
+                    </constraints>
+                    <string key="text">Một OTP đã được gửi bằng tin nhắn SMS đến
+điện thoại của bạn, mở tin nhắn điện thoại của bạn để xem &amp; nhập OTP</string>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bạn chưa nhận được OTP?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICd-bG-lhQ">
+                    <rect key="frame" x="20" y="445" width="374" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E82-Vn-Ei8">
+                    <rect key="frame" x="16" y="504" width="378" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="tintColor" systemColor="systemOrangeColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Gửi lại OTP"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fbg-A8-0xf" customClass="OTPFieldView" customModule="OTPFieldView">
+                    <rect key="frame" x="16" y="232" width="367" height="45"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="k13-Hj-Wo6"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uEv-BN-OsV">
+                    <rect key="frame" x="391" y="244" width="7" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="46I-Md-Ghb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Fbg-A8-0xf" firstAttribute="top" secondItem="XLY-TL-3pI" secondAttribute="bottom" constant="8" symbolic="YES" id="14L-0B-WUf"/>
+                <constraint firstItem="JNj-Ie-QK6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9f0-eb-qwO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EfY-4e-Niy" secondAttribute="trailing" constant="16" id="CrS-Cu-G7Y"/>
+                <constraint firstItem="JNj-Ie-QK6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="75" id="Eie-rt-h71"/>
+                <constraint firstItem="uEv-BN-OsV" firstAttribute="leading" secondItem="Fbg-A8-0xf" secondAttribute="trailing" constant="8" id="ZA9-F3-G2P"/>
+                <constraint firstItem="XLY-TL-3pI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="a9h-Rs-4bs"/>
+                <constraint firstItem="EfY-4e-Niy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="al9-Xv-uH1"/>
+                <constraint firstItem="XLY-TL-3pI" firstAttribute="top" secondItem="JNj-Ie-QK6" secondAttribute="bottom" constant="30" id="bdf-zf-F0k"/>
+                <constraint firstItem="Fbg-A8-0xf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hbc-TS-eiN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XLY-TL-3pI" secondAttribute="trailing" constant="16" id="lEM-Ox-hDh"/>
+                <constraint firstItem="uEv-BN-OsV" firstAttribute="centerY" secondItem="Fbg-A8-0xf" secondAttribute="centerY" id="omG-TK-VOH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uEv-BN-OsV" secondAttribute="trailing" constant="16" id="pfS-lg-sIb"/>
+                <constraint firstItem="EfY-4e-Niy" firstAttribute="top" secondItem="Fbg-A8-0xf" secondAttribute="bottom" constant="24" id="uw5-Dx-LAF"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="94.419642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tech-logo_cl_#1" width="222.5" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

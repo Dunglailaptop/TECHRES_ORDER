@@ -1,0 +1,195 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.7.1)
+  - Alamofire (5.8.0)
+  - BmoViewPager (5.2.0)
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - Differentiator (5.0.0)
+  - JNSegmentedControl (1.0.6)
+  - JonAlert (1.0.0)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (7.9.1)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - MSPeekCollectionViewDelegateImplementation (3.2.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - ObjectMapper (4.2.0)
+  - OTPFieldView (1.0.1)
+  - Printer (4.1.0)
+  - QRealmManager (0.0.7):
+    - RealmSwift (~> 10.28)
+  - Realm (10.42.4):
+    - Realm/Headers (= 10.42.4)
+  - Realm/Headers (10.42.4)
+  - RealmSwift (10.42.4):
+    - Realm (= 10.42.4)
+  - RKSlider (0.0.6)
+  - RSRealmHelper (1.1.3):
+    - KeychainAccess
+    - RealmSwift
+  - RxBinding (0.5):
+    - RxCocoa (~> 6)
+    - RxSwift (~> 6)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxDataSources (5.0.0):
+    - Differentiator (~> 5.0)
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxGesture (4.0.4):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - RxSwiftExt (6.2.1):
+    - RxSwiftExt/Core (= 6.2.1)
+    - RxSwiftExt/RxCocoa (= 6.2.1)
+  - RxSwiftExt/Core (6.2.1):
+    - RxSwift (~> 6.0)
+  - RxSwiftExt/RxCocoa (6.2.1):
+    - RxCocoa (~> 6.0)
+    - RxSwiftExt/Core
+  - SnapKit (5.6.0)
+  - SNCollectionViewLayout (1.0.1)
+  - Socket.IO-Client-Swift (16.1.0):
+    - Starscream (~> 4.0.6)
+  - SocketRocket (0.7.0)
+  - Starscream (4.0.6)
+  - SwiftAlgorithms (1.0.0)
+  - TagListView (1.4.1)
+  - ZLPhotoBrowser (4.4.5):
+    - ZLPhotoBrowser/Core (= 4.4.5)
+  - ZLPhotoBrowser/Core (4.4.5)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - Alamofire
+  - BmoViewPager
+  - Charts
+  - JNSegmentedControl
+  - JonAlert (from `https://github.com/jonSurrey/JonAlert.git`, branch `master`)
+  - Kingfisher
+  - Moya/RxSwift (~> 15.0)
+  - MSPeekCollectionViewDelegateImplementation
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - OTPFieldView
+  - Printer (from `https://github.com/KevinGong2013/Printer.git`, branch `refactor`)
+  - QRealmManager
+  - RealmSwift
+  - RKSlider
+  - RSRealmHelper
+  - RxBinding
+  - RxCocoa
+  - RxDataSources
+  - RxGesture
+  - RxSwift
+  - RxSwiftExt
+  - SnapKit
+  - SNCollectionViewLayout
+  - Socket.IO-Client-Swift
+  - SocketRocket
+  - TagListView
+  - ZLPhotoBrowser
+
+SPEC REPOS:
+  trunk:
+    - ActionSheetPicker-3.0
+    - Alamofire
+    - BmoViewPager
+    - Charts
+    - Differentiator
+    - JNSegmentedControl
+    - KeychainAccess
+    - Kingfisher
+    - Moya
+    - MSPeekCollectionViewDelegateImplementation
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - OTPFieldView
+    - QRealmManager
+    - Realm
+    - RealmSwift
+    - RKSlider
+    - RSRealmHelper
+    - RxBinding
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxRelay
+    - RxSwift
+    - RxSwiftExt
+    - SnapKit
+    - SNCollectionViewLayout
+    - Socket.IO-Client-Swift
+    - SocketRocket
+    - Starscream
+    - SwiftAlgorithms
+    - TagListView
+    - ZLPhotoBrowser
+
+EXTERNAL SOURCES:
+  JonAlert:
+    :branch: master
+    :git: https://github.com/jonSurrey/JonAlert.git
+  Printer:
+    :branch: refactor
+    :git: https://github.com/KevinGong2013/Printer.git
+
+CHECKOUT OPTIONS:
+  JonAlert:
+    :commit: c37cdd9d82fb5bb0af8952a4299d7c9b20e3237e
+    :git: https://github.com/jonSurrey/JonAlert.git
+  Printer:
+    :commit: 86074c9a3a6c5268095d543608a8d24c1efe2070
+    :git: https://github.com/KevinGong2013/Printer.git
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: 36da254b97a09ff89679ecb8b8510bd3e5bdc773
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  BmoViewPager: f06da0dd20d115e2ced117268465230d922624b7
+  Charts: ce0768268078eee0336f122c3c4ca248e4e204c5
+  Differentiator: e8497ceab83c1b10ca233716d547b9af21b9344d
+  JNSegmentedControl: 98588c1d06a1126f740f6c6aa8c6a901cfa07e84
+  JonAlert: b254830587addcc52d0e9ee871f43f4d6194d342
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 1d14e9f59cbe19389f591c929000332bf70efd32
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  MSPeekCollectionViewDelegateImplementation: be35a217bd302976a9e4476151be992c1f150127
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
+  Printer: c762f8704aaa80c2a793a5ebd6757db2c7428e5d
+  QRealmManager: 1d005bc150a2dc0fdb4eafded95a83a85cb67f5e
+  Realm: a3a10c2110744ec9510a5fc21a6051818c6181c7
+  RealmSwift: d25fa6c3cbb722a698993a501206d9841d79ca32
+  RKSlider: 617f37b2e166abf1531bbf2393e9f8800a673c10
+  RSRealmHelper: 8011118633220945977a79045cca1b8157be7439
+  RxBinding: e3c76d02d0ee3f1a306a0fb8e8ef6f2eda65a375
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxDataSources: aa47cc1ed6c500fa0dfecac5c979b723542d79cf
+  RxGesture: f3efb47ed2d26a8082f7b660d4a59970e275a7f8
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  RxSwiftExt: 43aaacb6a4d3c69c55e9d1cf4f79920043d13583
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SNCollectionViewLayout: 9991574aa022237c75acf0e3dc890b09aa4e4c31
+  Socket.IO-Client-Swift: ee4b8f80a3db18dd7f32b266ddf273310609443c
+  SocketRocket: abac6f5de4d4d62d24e11868d7a2f427e0ef940d
+  Starscream: fb2c4510bebf908c62bd383bcf05e673720e91fd
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+  TagListView: a1c236d17960a0cf64156725a76ce6d73ebce2be
+  ZLPhotoBrowser: c517bd5ca32909ba67b02b99a558ab90756a8448
+
+PODFILE CHECKSUM: b984d42176c3fbbd9d1fcfdba3a70d47ffbb4b67
+
+COCOAPODS: 1.11.3

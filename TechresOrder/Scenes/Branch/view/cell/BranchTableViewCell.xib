@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="BranchTableViewCell" customModule="TECHRES_ORDER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReactiveExtensionsLogo" translatesAutoresizingMaskIntoConstraints="NO" id="wi4-m5-zbj">
+                        <rect key="frame" x="16" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="S78-0F-hsI"/>
+                            <constraint firstAttribute="width" constant="50" id="SqJ-qM-cJe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="303 Pham Van Dong" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb9-Y8-0to">
+                        <rect key="frame" x="74" y="8" width="192" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdw-cv-DRU">
+                        <rect key="frame" x="274" y="25" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="3uP-YJ-Lds"/>
+                            <constraint firstAttribute="height" constant="30" id="a7t-K3-b0E"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemGreenColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="checkmark" catalog="system">
+                            <attributedString key="attributedTitle"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DXR-t4-OEr">
+                        <rect key="frame" x="0.0" y="79" width="320" height="1"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aWc-c5-I56"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="address " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dgo-mN-Tww">
+                        <rect key="frame" x="74" y="25" width="192" height="52"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="13"/>
+                        <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dgo-mN-Tww" firstAttribute="leading" secondItem="wi4-m5-zbj" secondAttribute="trailing" constant="8" symbolic="YES" id="1WO-oX-vn0"/>
+                    <constraint firstItem="DXR-t4-OEr" firstAttribute="top" secondItem="dgo-mN-Tww" secondAttribute="bottom" constant="2" id="2pW-oa-b7g"/>
+                    <constraint firstItem="DXR-t4-OEr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3OY-9F-pjU"/>
+                    <constraint firstItem="wi4-m5-zbj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Cv5-SR-kDX"/>
+                    <constraint firstItem="zdw-cv-DRU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Fsd-H3-bf8"/>
+                    <constraint firstItem="zdw-cv-DRU" firstAttribute="leading" secondItem="dgo-mN-Tww" secondAttribute="trailing" constant="8" symbolic="YES" id="OvZ-Z4-s7y"/>
+                    <constraint firstAttribute="trailing" secondItem="zdw-cv-DRU" secondAttribute="trailing" constant="16" id="Rlt-gP-Rbg"/>
+                    <constraint firstItem="zdw-cv-DRU" firstAttribute="leading" secondItem="Tb9-Y8-0to" secondAttribute="trailing" constant="8" symbolic="YES" id="SRW-Zd-ZTf"/>
+                    <constraint firstItem="Tb9-Y8-0to" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="U0w-7I-hLI"/>
+                    <constraint firstAttribute="trailing" secondItem="DXR-t4-OEr" secondAttribute="trailing" id="XbC-as-3lG"/>
+                    <constraint firstItem="dgo-mN-Tww" firstAttribute="top" secondItem="Tb9-Y8-0to" secondAttribute="bottom" id="eut-yS-Dl0"/>
+                    <constraint firstAttribute="bottom" secondItem="DXR-t4-OEr" secondAttribute="bottom" id="xV4-4m-b4G"/>
+                    <constraint firstItem="Tb9-Y8-0to" firstAttribute="leading" secondItem="wi4-m5-zbj" secondAttribute="trailing" constant="8" symbolic="YES" id="xXU-dk-pDs"/>
+                    <constraint firstItem="wi4-m5-zbj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zOG-aR-qjh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="avatar_branch" destination="wi4-m5-zbj" id="ckF-1w-uce"/>
+                <outlet property="btnEditBranch" destination="zdw-cv-DRU" id="uwb-Zd-Cw5"/>
+                <outlet property="lbl_address" destination="dgo-mN-Tww" id="sOK-JJ-NTk"/>
+                <outlet property="lbl_branch_name" destination="Tb9-Y8-0to" id="b0C-Lq-ud6"/>
+            </connections>
+            <point key="canvasLocation" x="-9.2307692307692299" y="1.4218009478672986"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ReactiveExtensionsLogo" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

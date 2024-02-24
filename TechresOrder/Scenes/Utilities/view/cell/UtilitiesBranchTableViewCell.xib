@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="rkH-31-fKu" customClass="UtilitiesBranchTableViewCell" customModule="ORDER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rkH-31-fKu" id="2zt-Gz-uDH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdT-hd-VDV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_defauft_medium" translatesAutoresizingMaskIntoConstraints="NO" id="ui0-IZ-RLj">
+                        <rect key="frame" x="16" y="19" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="MLx-CD-XDh"/>
+                            <constraint firstAttribute="width" constant="50" id="nT2-ek-AwG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="303 Pham Van Dong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpc-oQ-7Jg">
+                        <rect key="frame" x="76" y="19" width="146" height="19"/>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c06-l0-xgb">
+                        <rect key="frame" x="274" y="29" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="XXa-xH-yy4"/>
+                            <constraint firstAttribute="height" constant="30" id="r14-xQ-93p"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="icon-next-brand">
+                            <attributedString key="attributedTitle"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="303 pham van dong phuong 01, Go vap" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48g-9B-ZM3">
+                        <rect key="frame" x="76" y="38" width="190" height="28"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8P3-o5-Mm3">
+                        <rect key="frame" x="0.0" y="86" width="320" height="2"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="fOW-5h-A4J"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2kL-Hj-8O0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                <constraints>
+                    <constraint firstItem="2kL-Hj-8O0" firstAttribute="top" secondItem="2zt-Gz-uDH" secondAttribute="top" id="1Xb-Vg-l4o"/>
+                    <constraint firstAttribute="trailing" secondItem="8P3-o5-Mm3" secondAttribute="trailing" id="2Pc-RC-G9c"/>
+                    <constraint firstItem="8P3-o5-Mm3" firstAttribute="leading" secondItem="2zt-Gz-uDH" secondAttribute="leading" id="BtW-x0-klC"/>
+                    <constraint firstItem="hpc-oQ-7Jg" firstAttribute="top" secondItem="ui0-IZ-RLj" secondAttribute="top" id="CSe-gu-AAi"/>
+                    <constraint firstAttribute="bottom" secondItem="wdT-hd-VDV" secondAttribute="bottom" id="Cxe-iu-YlD"/>
+                    <constraint firstItem="wdT-hd-VDV" firstAttribute="top" secondItem="2zt-Gz-uDH" secondAttribute="top" id="F1d-wx-L3f"/>
+                    <constraint firstItem="c06-l0-xgb" firstAttribute="leading" secondItem="hpc-oQ-7Jg" secondAttribute="trailing" constant="52" id="FID-JS-g9H"/>
+                    <constraint firstAttribute="trailing" secondItem="c06-l0-xgb" secondAttribute="trailing" constant="16" id="Hdr-cX-rti"/>
+                    <constraint firstAttribute="bottom" secondItem="8P3-o5-Mm3" secondAttribute="bottom" id="QIj-ik-X8K"/>
+                    <constraint firstItem="48g-9B-ZM3" firstAttribute="top" secondItem="hpc-oQ-7Jg" secondAttribute="bottom" id="RLa-Vv-YiK"/>
+                    <constraint firstItem="hpc-oQ-7Jg" firstAttribute="leading" secondItem="ui0-IZ-RLj" secondAttribute="trailing" constant="10" id="SQ7-TS-oKb"/>
+                    <constraint firstItem="8P3-o5-Mm3" firstAttribute="top" secondItem="2kL-Hj-8O0" secondAttribute="bottom" id="Vqa-mG-dS7"/>
+                    <constraint firstItem="c06-l0-xgb" firstAttribute="leading" secondItem="48g-9B-ZM3" secondAttribute="trailing" constant="8" id="dVG-Ry-Vfe"/>
+                    <constraint firstItem="wdT-hd-VDV" firstAttribute="leading" secondItem="2zt-Gz-uDH" secondAttribute="leading" id="eBk-j8-kvb"/>
+                    <constraint firstAttribute="trailing" secondItem="wdT-hd-VDV" secondAttribute="trailing" id="eeU-3A-5p9"/>
+                    <constraint firstItem="2kL-Hj-8O0" firstAttribute="leading" secondItem="2zt-Gz-uDH" secondAttribute="leading" id="ffC-2j-xJ7"/>
+                    <constraint firstItem="ui0-IZ-RLj" firstAttribute="leading" secondItem="2zt-Gz-uDH" secondAttribute="leading" constant="16" id="h3j-dA-nq5"/>
+                    <constraint firstItem="c06-l0-xgb" firstAttribute="centerY" secondItem="2zt-Gz-uDH" secondAttribute="centerY" id="mwu-Vg-cPd"/>
+                    <constraint firstItem="ui0-IZ-RLj" firstAttribute="centerY" secondItem="2zt-Gz-uDH" secondAttribute="centerY" id="p1w-aU-Ltv"/>
+                    <constraint firstItem="48g-9B-ZM3" firstAttribute="leading" secondItem="hpc-oQ-7Jg" secondAttribute="leading" id="uO3-8b-Qe1"/>
+                    <constraint firstAttribute="trailing" secondItem="2kL-Hj-8O0" secondAttribute="trailing" id="yos-Ne-cbK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="rio-mX-9gW"/>
+            <connections>
+                <outlet property="avatar_branch" destination="ui0-IZ-RLj" id="3rp-FI-PXv"/>
+                <outlet property="btnChooseBranch" destination="2kL-Hj-8O0" id="wmf-oz-xMc"/>
+                <outlet property="btnEditBranch" destination="c06-l0-xgb" id="C1v-M4-z2Y"/>
+                <outlet property="lbl_branch_address" destination="48g-9B-ZM3" id="j2N-Zb-neO"/>
+                <outlet property="lbl_branch_name" destination="hpc-oQ-7Jg" id="AKK-Y8-FlL"/>
+            </connections>
+            <point key="canvasLocation" x="13.846153846153845" y="87.440758293838854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-next-brand" width="30" height="30"/>
+        <image name="image_defauft_medium" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
